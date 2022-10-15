@@ -2,7 +2,15 @@
 
 ## Installation
 
-`pip install https://github.com/dinokukic/seo-tools-cli`
+Clone the repository using the following command:
+
+`git clone https://github.com/dinokukic/seo-tools-cli`
+
+Afterwards just install it using `pip`
+
+`pip install seo-tools-cli` - from the current folder, or if you navigate to the folder then:
+
+`pip install .`
 
 ## Usage
 

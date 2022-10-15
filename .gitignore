@@ -8,6 +8,7 @@ __pycache__/
 # Local Installation
 indx.egg-info
 seo_tools_cli.egg-info
+build
 
 # Ignore CSV files
 *.csv
