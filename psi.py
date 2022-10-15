@@ -31,7 +31,7 @@ def cli():
 
           url_list = open(args.path_or_url, 'r')
       
-          with open('results' + str(int(time.time())) + '.csv', 'w') as csvresults:
+          with open('psi_results_' + str(int(time.time())) + '.csv', 'w') as csvresults:
                   results_writer = csv.writer(csvresults, delimiter=',')
                   results_writer.writerow(['URL', 'Speed Index', 'CLS', 'LCP', 'FID', 'TBT', 'FCP', 'TTI'])
       

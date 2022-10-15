@@ -45,8 +45,7 @@ def cli():
             self.proxy_username=proxy_username
             self.proxy_password=proxy_password
             self.socket_options=socket_options
-            # if proxy_type is provided then change the socket to socksocket
-            # else behave like a normal SMTP class.
+
             if self.proxy_type:
                 self._get_socket = self.socks_get_socket
 
@@ -81,7 +80,7 @@ def cli():
             host_exists = True
             smtp.helo() 
             print(smtp.helo())
-            smtp_mail = smtp.mail('hello@linkout.io') 
+            smtp_mail = smtp.mail('hello@stu404.com') 
             resp = smtp.rcpt(email)
             print(resp)
             if resp[0] == 250: 

@@ -28,7 +28,7 @@ def cli():
         count = 1
         for url in url_list:
             print(count, end = '\r')
-            response = requests.get(url.strip())
+            response = requests.get(url.strip(), allow_redirects=False)
 
             status_writer.writerow([url.strip(), response.status_code])
       

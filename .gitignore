@@ -1,0 +1,13 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# C extensions
+*.so
+
+# Local Installation
+indx.egg-info
+seo_tools_cli.egg-info
+
+# Ignore CSV files
+*.csv

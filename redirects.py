@@ -45,7 +45,7 @@ def cli():
                     redirect_statuses = ''
                     url_list = ''
                     last_url = response.url
-                    count = 1
+                    count = 0
                     for r in response.history:
                         print('current url: ' + r.url + '\n status code:' + str(r.status_code))
                         redirect_statuses += str(r.status_code) + ' > '
@@ -90,3 +90,5 @@ def cli():
                     redirect_writer.writerow([source_url, count, redirect_statuses, url_list])
                 else:  
                     redirect_writer.writerow([source_url, 0, response.status_code, response.url])
+
+    print('Done! Saved as: ' + filename)
